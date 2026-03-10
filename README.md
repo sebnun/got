@@ -29,6 +29,6 @@ Given the small amount of data, I did not use virtual lists, I think it is overk
 
 ## The elephant in the room
 
-This task could be done with an LLM, I did not use an LLM to generate code as I think it is more useful for the discussion to show code written "manually".  
+This task could've been done with an LLM, I did not use an LLM to generate code as I think it is more useful for the discussion to show code written "manually".  
 
 The only external tool I used is squoosh.app to reduce the size of the background image.
