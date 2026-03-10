@@ -1,4 +1,5 @@
 import FilteredCharacterList from "@/components/FilteredCharacterList";
+import TextFeedback from "@/components/TextFeedback";
 import { ALL_CHARACTERS_ENDPOINT } from "@/utils";
 import { Character } from "@/utils/types";
 
@@ -7,15 +8,10 @@ export default async function Home() {
 
   if (!charactersResponse.ok) {
     // If we can't fetch the data, the whole list is unusable
-    return <h1>There was an error fetching the characters</h1>;
+    return <TextFeedback type="error">There was an error fetching the characters</TextFeedback>;
   }
 
   const characters = (await charactersResponse.json()) as Character[];
 
-  return (
-    <>
-      <h1>Game of Thrones families</h1>
-      <FilteredCharacterList characters={characters} />
-    </>
-  );
+  return <FilteredCharacterList characters={characters} />;
 }

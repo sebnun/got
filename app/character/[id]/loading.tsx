@@ -1,4 +1,5 @@
+import TextFeedback from "@/components/TextFeedback";
+
 export default function Loading() {
-  // TODO: a skeleton component for better UX
-  return <h1>Loading character...</h1>;
+  return <TextFeedback type="loading">Loading character...</TextFeedback>;
 }
