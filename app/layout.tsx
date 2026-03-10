@@ -32,7 +32,6 @@ export default async function RootLayout({
           alt="Background"
           src={background}
           placeholder="blur"
-          quality={100}
           fill
           sizes="100vw"
           style={{
