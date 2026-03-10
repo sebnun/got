@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description: "Game of Thrones Family Inspector",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -29,7 +29,7 @@ export default function RootLayout({
         <nav>
           <Link href="/">Home</Link>
         </nav>
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
